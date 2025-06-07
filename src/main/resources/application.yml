@@ -1,0 +1,12 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: usageDB
+  graphql:
+    path: /graphql
+    graphiql:
+      enabled: true
+
+server:
+  port: 7979

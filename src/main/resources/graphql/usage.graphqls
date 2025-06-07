@@ -1,0 +1,48 @@
+scalar Long
+scalar LocalDate
+
+type UsageResponse {
+hhId: String
+offerId: String
+count: Long
+storeId: String
+transactionId: String
+transactionTimeStamp: LocalDate
+status: String
+createdDate: LocalDate
+lastUpdatedDate: LocalDate
+usageDate: LocalDate
+offerEndDate: String
+extOfferId: String
+laneNumber: Int
+source: String
+clipIds: [String]
+earnPoints: Int
+}
+
+input UsageRequest {
+hhId: String
+offerId: String
+count: Long
+storeId: String
+transactionId: String
+transactionTimeStamp: LocalDate
+status: String
+createdDate: LocalDate
+lastUpdatedDate: LocalDate
+usageDate: LocalDate
+offerEndDate: String
+extOfferId: String
+laneNumber: Int
+source: String
+clipIds: [String]
+earnPoints: Int
+}
+
+type Query {
+   healthCheck: String
+}
+
+type Mutation {
+    insertUsage(usageRequest: UsageRequest): UsageResponse
+}

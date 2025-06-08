@@ -41,7 +41,7 @@ dependencies {
 	annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
 	implementation 'com.graphql-java:graphql-java-extended-scalars:22.0'
 	implementation ('com.graphql-java-kickstart:graphql-java-tools:12.0.2') {
-		exclude group: 'com.graphql-java', module: 'graphql-java-extended-scalars' // Avoid version conflict
+		exclude group: 'com.graphql-java', module: 'graphql-java-extended-scalars'
 	}
 }
 

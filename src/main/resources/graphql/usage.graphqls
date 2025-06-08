@@ -41,6 +41,8 @@ earnPoints: Int
 
 type Query {
    healthCheck: String
+    getUsageByHhid(hhId: String!): [UsageResponse]
+    getUsageByHhidAndOfferId(hhId: String!, offerId: String!): [UsageResponse]
 }
 
 type Mutation {
